@@ -128,7 +128,7 @@ BOARD_HAS_MTK_HARDWARE := ture
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 #TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+#TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6768
@@ -144,7 +144,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2024-07-01
+VENDOR_SECURITY_PATCH := 2024-11-01
 
 # SELinux
 #include device/mediatek/sepolicy_vndr/SEPolicy.mk
