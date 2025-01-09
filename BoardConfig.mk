@@ -91,6 +91,10 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 BOARD_KERNEL_SEPARATED_DTBO := 
 endif
 
+# OTA package
+TARGET_OTA_ALLOW_NON_AB := true
+AB_OTA_UPDATER := false
+
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 80740352
 BOARD_FLASH_BLOCK_SIZE := 131072                  	# 2048     * 64   (pagesize)
