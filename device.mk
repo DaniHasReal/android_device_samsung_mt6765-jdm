@@ -66,6 +66,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlay_JDM_A05 \
+    WiFiOverlay_JDM_A05 \
     SystemUIOverlay_JDM_A05 
     
 DEVICE_PACKAGE_OVERLAYS += \
