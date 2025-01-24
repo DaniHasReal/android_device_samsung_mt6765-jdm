@@ -5,7 +5,7 @@
   SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.frameworksres.overlay.a05m">
+    package="com.android.frameworksres.overlay.jdm.g85">
 
     <application android:hasCode="false" />
     <overlay

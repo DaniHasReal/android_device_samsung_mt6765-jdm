@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/a05m
+COMMON_PATH := device/samsung/mt6768-jdm
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -28,8 +28,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-service-system
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
-    $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
+    $(COMMON_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
+    $(COMMON_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1600
@@ -41,7 +41,7 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images_vendor \
-    $(DEVICE_PATH)/init/init.sec-charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sec-charger.rc \
+    $(COMMON_PATH)/init/init.sec-charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sec-charger.rc \
     libsuspend
 
 # Fastbootd
@@ -65,9 +65,9 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlay_JDM_A05 \
-    WiFiOverlay_JDM_A05 \
-    SystemUIOverlay_JDM_A05 
+    FrameworksResOverlay_JDM_G85 \
+    WiFiOverlay_JDM_G85 \
+    SystemUIOverlay_JDM_G85
     
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
@@ -115,7 +115,7 @@ PRODUCT_COPY_FILES += \
 
 # SEC_RIL
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/vendor_overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/31/)
+    $(call find-copy-subdir-files,*,$(COMMON_PATH)/vendor_overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/31/)
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
