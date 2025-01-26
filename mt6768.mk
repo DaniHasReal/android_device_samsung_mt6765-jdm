@@ -17,6 +17,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# Inherit LPM
+#$(call inherit-product, vendor/samsung/lpm/samsung-lpm.mk)
+
+
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_FULL_TREBLE_OVERRIDE := true
