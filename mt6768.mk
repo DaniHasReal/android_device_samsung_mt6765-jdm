@@ -45,8 +45,11 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images_vendor \
-    $(COMMON_PATH)/init/init.sec-charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sec-charger.rc \
     libsuspend
+
+# DT2W
+PRODUCT_PACKAGES += \
+    $(COMMON_PATH)/init/init.dt2w.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.dt2w.rc
 
 # Fastbootd
 PRODUCT_PACKAGES += \
