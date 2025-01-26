@@ -82,7 +82,7 @@ static const std::vector<variant_info_t> variants = {
     a055f_info,
     a055m_info,
     a065m_info,
-    f055f_info,
+    e055f_info,
     m055f_info,
 };
 
