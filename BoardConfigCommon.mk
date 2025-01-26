@@ -143,7 +143,4 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 #WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 #WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
-# Inherit the proprietary files
-include vendor/samsung/a05m/BoardConfigVendor.mk
-
 
