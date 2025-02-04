@@ -11,10 +11,11 @@
      NOTE: The naming convention is "config_camelCaseValue". Some legacy
      entries do not follow the convention, but all new entries should. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -21.33333333333333 V 31.46666666666667 H 21.33333333333333 V 0 H 0 Z @dp</string>
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -46.93333333333333 V 24 H 46.93333333333333 V 0 H 0 Z @dp</string>
+    <dimen name="status_bar_camera_cutout_crop_size">84.0px</dimen>
     <dimen name="status_bar_camera_top_margin">4.0px</dimen>
-    <dimen name="status_bar_height_portrait">4.2199707mm</dimen>
-    <dimen name="status_bar_indicator_corner_padding">45.0px</dimen>
+    <dimen name="status_bar_height_portrait">4.529999mm</dimen>
+    <dimen name="status_bar_indicator_corner_padding">55.0px</dimen>
     <dimen name="rounded_corner_radius_bottom">38.0dip</dimen>
     <dimen name="rounded_corner_radius_top">38.0dip</dimen>
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be

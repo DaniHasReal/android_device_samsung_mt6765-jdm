@@ -5,7 +5,7 @@
   SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.wifi.overlay.jdm.g85">
+    package="com.android.wifi.overlay.jdm.p35">
 
     <application android:hasCode="false" />
     <overlay

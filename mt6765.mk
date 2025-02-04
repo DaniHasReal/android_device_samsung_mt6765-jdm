@@ -72,8 +72,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlay_JDM_G85 \
-    WiFiOverlay_JDM_G85 
+    FrameworksResOverlay_JDM_P35 \
+    SystemUIOverlay_JDM_P35 
     
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
