@@ -29,7 +29,7 @@ on post-fs-data
 
 service ccci_mdinit /vendor/bin/ccci_mdinit 0
     user system
-    group radio system root bluetooth log
+    group radio system
     oneshot
 
 service ccci_rpcd /vendor/bin/ccci_rpcd 0

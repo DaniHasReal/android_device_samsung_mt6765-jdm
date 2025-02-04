@@ -1,6 +1,6 @@
 on init
     setprop sys.usb.configfs 1
-    setprop sys.usb.ffs.aio_compat 0
+    setprop sys.usb.ffs.aio_compat 1
 
 on fs && property:ro.debuggable=0
     # distinguish USB shoulde connect or not, i.e. CDP vs SDP
@@ -9,7 +9,7 @@ on fs && property:ro.debuggable=0
     start adbd
 
 on post-fs
-    # Support A/B feature for EMMC and UFS boot region
+    # Support A/B feature for emmc boot region
     symlink /dev/block/sda /dev/block/mmcblk0boot0
     symlink /dev/block/sdb /dev/block/mmcblk0boot1
     symlink /dev/block/mmcblk0boot0 /dev/block/platform/bootdevice/by-name/preloader_a

@@ -45,17 +45,3 @@ service stp_dump /vendor/bin/stp_dump3
     group system sdcard_rw misc
     class core
     disabled
-	
-service wifiver_info /vendor/bin/wifiver_info
-    user wifi
-    group root wifi
-    class core
-    disabled
-    oneshot
-
-on post-fs-data
-   mkdir /data/vendor/conn 0771 wifi root
-
-on property:sys.boot_completed=1 && property:vendor.wifi_fw_ver=*
-   start wifiver_info
-   chmod 0666 /data/vendor/conn/.wifiver.info

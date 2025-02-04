@@ -94,7 +94,9 @@ on post-fs-data
     chmod 0660 /sys/class/sensor/m_als_misc/alsdelay
     chmod 0660 /sys/class/sensor/m_als_misc/alsbatch
     chmod 0660 /sys/class/sensor/m_als_misc/alsflush
-    chmod 0660 /sys/class/sensor/m_als_misc/alslcd
+    #TabA7 Lite code for SR-AX3565-01-144 by Hujincan at 20201211 start
+    chmod 0660 /sys/class/sensor/m_als_misc/alscali
+    #TabA7 Lite code for SR-AX3565-01-144 by Hujincan at 20201211 end
     chmod 0660 /sys/class/sensor/m_als_misc/alscali
     chmod 0660 /sys/class/sensor/m_ps_misc/psactive
     chmod 0660 /sys/class/sensor/m_ps_misc/psdelay
@@ -105,7 +107,9 @@ on post-fs-data
     chown system system /sys/class/sensor/m_als_misc/alsdelay
     chown system system /sys/class/sensor/m_als_misc/alsbatch
     chown system system /sys/class/sensor/m_als_misc/alsflush
-    chown system system /sys/class/sensor/m_als_misc/alslcd
+    #TabA7 Lite code for SR-AX3565-01-144 by Hujincan at 20201211 start
+    chown system system /sys/class/sensor/m_als_misc/alscali
+    #TabA7 Lite code for SR-AX3565-01-144 by Hujincan at 20201211 end
     chown system system /sys/class/sensor/m_als_misc/alscali
     chown system system /sys/class/sensor/m_ps_misc/psactive
     chown system system /sys/class/sensor/m_ps_misc/psdelay

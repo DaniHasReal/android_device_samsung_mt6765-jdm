@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/samsung/mt6768-jdm
+COMMON_PATH := device/samsung/mt6765-jdm
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -90,7 +90,7 @@ PRODUCT_CHARACTERISTICS := phone
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.enableswap \
-    fstab.mt6768 \
+    fstab.mt6765 \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
     factory_init.project.rc \
@@ -101,8 +101,8 @@ PRODUCT_PACKAGES += \
     init.connectivity.common.rc \
     init.connectivity.rc \
     init.modem.rc \
-    init.mt6768.rc \
-    init.mt6768.usb.rc \
+    init.mt6765.rc \
+    init.mt6765.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
     init_connectivity.rc \
@@ -113,11 +113,11 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     meta_init.vendor.rc \
     multi_init.rc \
-    init.recovery.mt6768.rc \
+    init.recovery.mt6765.rc \
     init.recovery.samsung.rc 
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768 
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765 
 
 # SEC_RIL
 PRODUCT_COPY_FILES += \

@@ -1,6 +1,7 @@
 #INTERNAL_START
 on post-fs
 
+
     chmod 0660 /dev/spm
     chown system system /dev/spm
 
