@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Inherit LPM
-$(call inherit-product, vendor/samsung/lpm/samsung-lpm.mk)
+$(call inherit-product, vendor/samsung/lpm-p35/samsung-lpm.mk)
 
 
 # API levels
