@@ -39,7 +39,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY := 300
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_samsung_jdm
+# TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_samsung_jdm
 TARGET_RECOVERY_DEVICE_MODULES := init_samsung_jdm
 
 # OTA package
