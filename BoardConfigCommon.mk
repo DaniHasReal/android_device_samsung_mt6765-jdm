@@ -40,6 +40,7 @@ TARGET_SCREEN_DENSITY := 300
 
 # Init
 TARGET_RECOVERY_DEVICE_MODULES := init_samsung_jdm
+$(call soong_config_set,libinit,vendor_init_lib,init_samsung_jdm)
 
 # OTA package
 TARGET_OTA_ALLOW_NON_AB := true
